@@ -1,31 +1,42 @@
 
 import java.util.ArrayList;
+// Java program to demonstrate
+// Logger.log(Level level, String msg)  method
 
-public class SingletonBD {
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-    private static ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>();
+    public class SingletonBD {
 
-    private SingletonBD() { }
+        // Create a Logger
+        static Logger logger
+                = Logger.getLogger(
+                SingletonBD.class.getName());
 
-    public static void adicionarUsuario(){
-        System.out.println("Usuário cadastrado com sucesso!");
-        System.out.println("");
+        private static ArrayList<Usuario> listaUsuario = new ArrayList<Usuario>();
+
+        private SingletonBD() {
+        }
+
+        public static void adicionarUsuario() {
+            logger.log(Level.INFO, "Usuário cadastrado com sucesso!");
+            logger.log(Level.INFO, "");
+        }
+
+        public static void deletarUsuario() {
+            logger.log(Level.INFO, "Usuário removido com sucesso!");
+            logger.log(Level.INFO, "");
+
+        }
+
+        public static void atualizarUsuario() {
+            logger.log(Level.INFO, "Usuário atualizado com sucesso!");
+            logger.log(Level.INFO, "");
+        }
+
+        public static void listarUsuarios() {
+            logger.log(Level.INFO, "Usuário listado com sucesso!");
+            logger.log(Level.INFO, "");
+        }
+
     }
-
-    public static void deletarUsuario(){
-        System.out.println("Usuário removido com sucesso!");
-        System.out.println("");
-
-    }
-
-    public static void atualizarUsuario(){
-        System.out.println("Usuário atualizado com sucesso!");
-        System.out.println("");
-    }
-
-    public static void listarUsuarios(){
-        System.out.println("Usuário listado com sucesso!");
-        System.out.println("");
-    }
-
-}
