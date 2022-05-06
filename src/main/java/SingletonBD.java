@@ -17,7 +17,10 @@ public class SingletonBD {
 
     }
 
-    public static void atualizarUsuario(){ }
+    public static void atualizarUsuario(){
+        System.out.println("Usuário atualizado com sucesso!");
+        System.out.println("");
+    }
 
     public static void listarUsuarios(){
         System.out.println("Usuário listado com sucesso!");
