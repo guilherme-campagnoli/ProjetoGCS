@@ -11,6 +11,7 @@ public class SingletonBD {
 
     public static void deletarUsuario(){
         // teste Lais - adicionar usuario
+        System.out.println("Usuário removido com sucesso!");
 
     }
 
