@@ -9,7 +9,10 @@ public class SingletonBD {
 
     public static void adicionarUsuario(){ }
 
-    public static void deletarUsuario(){ }
+    public static void deletarUsuario(){
+        // teste Lais - adicionar usuario
+
+    }
 
     public static void atualizarUsuario(){ }
 
